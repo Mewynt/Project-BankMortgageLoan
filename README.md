@@ -1,0 +1,2 @@
+# Project-BankMortgageLoan
+A Bank mortgage loan simulator. Firstly you need to enter an amount between S/. 300,000 and S/. 110,000,000 in soles or $90.000 and $900.000 in dollars, then choose a porcentage between 10% and 70% for the down payment, later pick a term in months between 6 and 48 months, after that decide a porcentage for the interest rate between 4% and 19%. Finally you select a date of application and the day of the month for payment.
