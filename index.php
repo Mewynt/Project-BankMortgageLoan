@@ -53,7 +53,7 @@ if ($_POST) {
                 </ul>
               <?php endif; ?>
             </div>
-            <label class="form-label">Elige la moneda:</label>
+            <label class="form-label pt-2">Elige la moneda:</label>
             <div class="form-check form-check-inline">
               <input class="form-check-input" type="radio" name="currency" id="currencySoles" value="Soles" checked>
               <label class="form-check-label" for="currencySoles">Soles</label>
@@ -71,17 +71,17 @@ if ($_POST) {
           <div class="mb-4">
             <label id="label-cuota" class="form-label">Cuota inicial</label>
             <input type="number" class="form-control" id="cuotaInicial" placeholder="Cuota" name="cuotaInicial">
-            <div id="" class="form-text">Entre 10% y 70%</div>
+            <div id="" class="form-text">MAYOR a 10% y Menor a 70%</div>
           </div>
           <div class="mb-4">
             <label id="label-plazo" class="form-label">Plazo de meses</label>
             <input type="number" class="form-control" id="tiempoMeses" placeholder="Plazo" name="tiempoMeses">
-            <div id="" class="form-text">Desde 6 meses a 48 meses</div>
+            <div id="" class="form-text">MAYOR a 6 meses y MENOR a meses</div>
           </div>
           <div class="mb-4">
             <label class="form-label">Tasa de interes</label>
             <input type="number" class="form-control" id="tasaPorcentual" placeholder="tasa" name="tasaPorcentual">
-            <div id="" class="form-text">Entre 4% y 19%</div>
+            <div id="" class="form-text">MAYOR a 4% y MENOR a 19%</div>
           </div>
           <div class="mb-4">
             <label class="form-label">Fecha de solicitud</label>

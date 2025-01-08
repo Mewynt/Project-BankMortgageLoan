@@ -28,7 +28,6 @@ function buscarErrores($datos, $money){
   }
 
 
-
     if (empty($cuotaInicial)) {
         $errores['cuotaInicial'] = "La cuota inicial no puede estar vacía.";
       } elseif (!is_numeric($cuotaInicial)) {
@@ -52,8 +51,6 @@ function buscarErrores($datos, $money){
       return $errores;
     
     }
-
-
 
 
 
