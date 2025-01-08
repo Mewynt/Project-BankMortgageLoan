@@ -22,7 +22,7 @@ if ($_POST) {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Banco Aliaga</title>
-  <link rel="stylesheet" href="http://localhost/final-guillermoaliaga-sebastianmartinez-miguelalonso/styles.css">
+  <link rel="stylesheet" href="http://localhost/project-bank-mortgage-loan-simulator/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
