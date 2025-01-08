@@ -66,7 +66,7 @@ if ($_POST) {
           <div class="mb-4">
             <label id="label-valor" class="form-label">Valor del bien</label>
             <input type="number" class="form-control" id="valorBien" placeholder="Valor" name="valorBien">
-            <div id="label-valor1" class="form-text">Entre S/. 300.000 y S/. 110.000.000 </div>
+            <div id="label-valor1" class="form-text">MAYOR a S/. 300.000 y MENOR a S/. 110.000.000 </div>
           </div>
           <div class="mb-4">
             <label id="label-cuota" class="form-label">Cuota inicial</label>

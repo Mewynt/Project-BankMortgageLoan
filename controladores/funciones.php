@@ -14,33 +14,19 @@ function buscarErrores($datos, $money){
   } elseif (!is_numeric($valorBien)) {
       $errores['valorBien'] = "Debe ingresar un número válido para el valor del bien.";
   } else {
-      if ($money === 'soles') {
+      if ($money === 'Soles') {
           if ($valorBien < 300000 || $valorBien > 110000000) {
               $errores['valorBien'] = "El valor del bien en soles debe estar entre S/ 300,000 y S/ 110,000,000.";
           }
-      } elseif ($money === 'dolares') {
+      } elseif ($money === 'Dolares') {
           if ($valorBien < 90000 || $valorBien > 900000) {
               $errores['valorBien'] = "El valor del bien en dólares debe estar entre $90,000 y $900,000.";
           }
       } else {
-          $errores['moneda'] = "Moneda no válida.";
+          $errores['moneda'] = "Compruebe los valores que introdujo";
       }
   }
-  if ((empty($valorBien)) != TRUE && (empty($cuotaInicial)) != TRUE && (empty($tiempoMeses)) != TRUE && (empty($tasaPorcentual)) != TRUE)  {
-    if ($cuotaInicial < ($valorBien * 0.1) || $cuotaInicial > ($valorBien * 0.7)) {
-        $errors['inicial'] = 'El rango de la cuota inicial no es valido.';
-    }
 
-    if ($tiempoMeses < 6 || $tiempoMeses > 48) {
-        $errors['meses'] = 'El rango de meses no esta disponible.';
-    }
-
-    if ($tasaPorcentual < 4 || $tasaPorcentual > 19) {
-        $errors['tasa'] = 'La tasa seleccionada no esta disponible.';
-    }
-}
-
-return $errores;
 
 
     if (empty($cuotaInicial)) {
@@ -67,22 +53,7 @@ return $errores;
     
     }
 
-function validarMoneda($valorBien, $money)
-{
-    if ($money === 'soles') {
-        if ($valorBien < 300000 || $valorBien > 110000000) {
-            return 'El valor del bien en soles debe estar entre 300,000 y 110,000,000.';
-        }
-    } elseif ($money === 'dolares') {
-        if ($valorBien < 90000 || $valorBien > 900000) {
-            return 'El valor del bien en dólares debe estar entre 90,000 y 900,000.';
-        }
-    } else {
-        return 'La moneda seleccionada no es válida.';
-    }
 
-    return null;
-}
 
 
 
